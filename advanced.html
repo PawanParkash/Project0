@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+
+         body {
+            background-image: url(image.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+            font-family: Arial, sans-serif;
+            margin: 50px;
+        }
+        h2{color: #dcdcdc;}
+        label {
+            color: #dcdcdc;
+            display: inline-block;
+            width: 200px;
+            margin-top: 10px;
+        }
+        input[type="text"] {
+            width: 400px;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #dcdcdc;
+        }
+        input[type="submit"] {
+            background-color: #4d90fe;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin-top: 20px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .top-links {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+        a {
+            text-decoration:underline;
+            color: rgb(18, 183, 229);
+        }
+    </style>
+</body>
+ <div class="top-links">
+        <a href="index.html">Google Search</a>
+         <a href="image.html">Image Search</a>
+    </div>
+
+    <h2>Advanced Search</h2>
+    <form action="https://www.google.com/search" method="GET">
+        <div>
+            <label>All these words:</label>
+            <input type="text" name="as_q">
+        </div>
+        <div>
+            <label>This exact word or phrase:</label>
+            <input type="text" name="as_epq">
+        </div>
+        <div>
+            <label>Any of these words:</label>
+            <input type="text" name="as_oq">
+        </div>
+        <div>
+            <label>None of these words:</label>
+            <input type="text" name="as_eq">
+        </div>
+        <input type="submit" value="Advanced Search">
+    </form>
+</html>
